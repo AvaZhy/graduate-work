@@ -147,47 +147,52 @@
             <p class="date">22 - 28 июня</p>
         </div>
         <div class="schedule-table">
-            <div class="table-item">
+            <div class="table-item about-01">
                 <p class="table-date">22 июня, 10:00</p>
                 <div class="table-name">
                     <img class="table-icon" src="img/icons/body.svg" alt="body">
                     <h4 class="title-h4">Функциональный тренинг</h4>
+                    <p class="table-description hidden text-01">Подготовка тела перед физической нагрузкой.</p>
                 </div>
             </div>
-            <div class="table-item">
+            <div class="table-item about-02">
                 <p class="table-date">24 июня, 10:00</p>
                 <div class="table-name">
                     <img class="table-icon" src="img/icons/bottle.svg" alt="bottle">
                     <h4 class="title-h4">Body sculpt</h4>
+                    <p class="table-description hidden text-02">Подготовка тела перед физической нагрузкой.</p>
                 </div>
             </div>
-            <div class="table-item">
+            <div class="table-item about-03">
                 <p class="table-date">26 июня, 11:00</p>
                 <div class="table-name">
                     <img class="table-icon" src="img/icons/dumbbell.svg" alt="dumbbell">
                     <h4 class="title-h4">L.A.B.</h4>
+                    <p class="table-description hidden text-03">Подготовка тела перед физической нагрузкой.</p>
                 </div>
             </div>
-            <div class="table-item">
+            <div class="table-item about-04">
                 <p class="table-date">23 июня, 10:00</p>
                 <div class="table-name">
                     <img class="table-icon" src="img/icons/jump.svg" alt="jump">
                     <h4 class="title-h4">Силовой микс</h4>
-                    <p>Упражнения помогут создать красивый рельеф и прийти в&nbsp;спортивную форму.</p>
+                    <p class="table-description">Упражнения помогут создать красивый рельеф и прийти в&nbsp;спортивную форму.</p>
                 </div>
             </div>
-            <div class="table-item">
+            <div class="table-item about-05">
                 <p class="table-date">25 июня, 11:00</p>
                 <div class="table-name">
                     <img class="table-icon" src="img/icons/heart.svg" alt="heart">
                     <h4 class="title-h4">Дыхательные практики</h4>
+                    <p class="table-description hidden text-05">Подготовка тела перед физической нагрузкой.</p>
                 </div>
             </div>
-            <div class="table-item">
+            <div class="table-item about-06">
                 <p class="table-date">27 июня, 10:00</p>
                 <div class="table-name">
                     <img class="table-icon" src="img/icons/weight.svg" alt="heart">
                     <h4 class="title-h4">Комплексная разминка</h4>
+                    <p class="table-description hidden text-06">Подготовка тела перед физической нагрузкой.</p>
                 </div>
             </div>
         </div>
@@ -220,6 +225,23 @@
                     target.fadeToggle('100');
                     });
         });
+        
+        $( ".table-item.about-01" ).hover(function() {
+            $( ".table-description.hidden.text-01" ).toggle('100');
+        });
+        $( ".table-item.about-02" ).hover(function() {
+            $( ".table-description.hidden.text-02" ).toggle('100');
+        });
+        $( ".table-item.about-03" ).hover(function() {
+            $( ".table-description.hidden.text-03" ).toggle('100');
+        });
+        $( ".table-item.about-05" ).hover(function() {
+            $( ".table-description.hidden.text-05" ).toggle('100');
+        });
+        $( ".table-item.about-06" ).hover(function() {
+            $( ".table-description.hidden.text-06" ).toggle('100');
+        });
+
     </script>
 </body>
 </html>
