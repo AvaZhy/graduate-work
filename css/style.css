@@ -397,9 +397,9 @@ time {
     line-height: 125%;
 }
 
-.gray {
+.grey {
     background-color: #F3F3F3;
-    margin-bottom: 200px;
+    margin-bottom: 162px;
 
 }
 
@@ -472,6 +472,49 @@ time {
 
 .form-item .form-email.invalid {
     border: 1px solid #AE0303;
+}
+
+.button__yellow,
+.button__yellow:visited,
+.button__yellow:active {
+    display: inline-block;
+    width: 225px;
+    height: 65px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: #FBF138;
+    color: #2B3541;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    transition: 0.3s;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: visible;
+}
+
+.button__yellow,
+.button__yellow:link,
+.button__yellow:visited,
+.button__yellow:hover,
+.button__yellow:active {
+    text-decoration: none
+}
+
+.button__yellow:focus,
+.button__yellow:hover {
+    outline: none;
+    color: #FBF138;
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+    font-weight: 700;
 }
 
 :-ms-input-placeholder {
@@ -557,3 +600,70 @@ time {
 .checkbox .data:hover {
     color: rgba(43, 53, 65);
 }
+
+.about {
+    margin-bottom: 100px;
+}
+
+.about-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+
+.about-information {
+    width: 483px;
+}
+
+.about-information .title-h2 {
+    margin: 0 0 22px 0;
+}
+
+.about-description {
+    line-height: 150%;
+    margin-bottom: 34px;
+}
+
+.about-image {
+    width: 581px;
+    height: 336px;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    height: 336px;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    transform: translate(50%, 50%);
+    object-fit: cover;
+}
+
+.list-items {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 44px;
+    padding: 0;
+}
+
+.list-item:nth-child(2) {
+    padding-left: 2px;
+}
+
+.list-item:nth-child(3) {
+    padding-left: 55px;
+}
+
+.list-item:last-child {
+    padding-left: 46px;
+}
+
+.list-item__description {
+    margin-top: 21px;
+    line-height: 150%;
+    color: rgba(43, 53, 65, .6);
+}
+
