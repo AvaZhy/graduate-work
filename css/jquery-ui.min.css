@@ -164,19 +164,25 @@
 }
 
 .ui-button {
-    padding: .4em 1em;
     display: inline-block;
-    position: relative;
-    line-height: normal;
-    margin-right: .1em;
-    cursor: pointer;
-    vertical-align: middle;
+    width: 225px;
+    height: 65px;
+    font-size: 16px;
+    line-height: 150%;
     text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: #FBF138;
+    color: #2B3541;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    transition: 0.3s;
+    cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    overflow: visible
+    overflow: visible;
 }
 
 .ui-button,
@@ -987,12 +993,12 @@ body .ui-tooltip {
 }
 
 .ui-widget {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
 
 .ui-widget .ui-widget {
-    font-size: 1em
+    font-size: 16px;
 }
 
 .ui-widget input,
@@ -1028,16 +1034,18 @@ body .ui-tooltip {
     color: #333
 }
 
+
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 .ui-button,
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
-    border: 1px solid #c5c5c5;
-    background: #f6f6f6;
-    font-weight: normal;
-    color: #454545
+    border: none;
+    background-color: #FBF138;
+    font-weight: 700;
+    color: #2B3541;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
 }
 
 .ui-state-default a,
@@ -1047,7 +1055,7 @@ a.ui-button,
 a:link.ui-button,
 a:visited.ui-button,
 .ui-button {
-    color: #454545;
+    color: #2B3541;
     text-decoration: none
 }
 
@@ -1059,10 +1067,11 @@ a:visited.ui-button,
 .ui-widget-header .ui-state-focus,
 .ui-button:hover,
 .ui-button:focus {
-    border: 1px solid #ccc;
-    background: #ededed;
-    font-weight: normal;
-    color: #2b2b2b
+    border: none;
+    color: #FBF138;
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+    font-weight: 700;
 }
 
 .ui-state-hover a,
@@ -1089,10 +1098,11 @@ a.ui-button:focus {
 a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
-    border: 1px solid #003eff;
-    background: #007fff;
-    font-weight: normal;
-    color: #fff
+    border: none;
+    color: #FBF138;
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+    font-weight: 700;
 }
 
 .ui-icon-background,
@@ -1913,33 +1923,7 @@ a.ui-button:active,
     background-position: -80px -224px
 }
 
-.ui-corner-all,
-.ui-corner-top,
-.ui-corner-left,
-.ui-corner-tl {
-    border-top-left-radius: 3px
-}
 
-.ui-corner-all,
-.ui-corner-top,
-.ui-corner-right,
-.ui-corner-tr {
-    border-top-right-radius: 3px
-}
-
-.ui-corner-all,
-.ui-corner-bottom,
-.ui-corner-left,
-.ui-corner-bl {
-    border-bottom-left-radius: 3px
-}
-
-.ui-corner-all,
-.ui-corner-bottom,
-.ui-corner-right,
-.ui-corner-br {
-    border-bottom-right-radius: 3px
-}
 
 .ui-widget-overlay {
     background: #aaa;
